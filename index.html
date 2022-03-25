@@ -7,20 +7,26 @@
   >https://lottiefiles.com/interactivity</a
 >
 
+<div style="height: 50vh"></div>
+
 <lottie-player
   id="firstLottie"
-  src="https://assets10.lottiefiles.com/packages/lf20_jqepseig.json"
+  src="https://assets7.lottiefiles.com/packages/lf20_9mf3wwgo.json"
   style="width: 400px; height: 400px"
->
-</lottie-player>
+></lottie-player>
+
+<div style="height: 300vh"></div>
 
 <script>
   LottieInteractivity.create({
-    mode: 'cursor',
+    container: '#MyContainerId',
     player: '#firstLottie',
+    mode: 'scroll',
     actions: [
       {
-        type: 'hold',
+        visibility: [0.5, 0.8],
+        type: 'seek',
+        frames: [0, 74],
       },
     ],
   });
